@@ -3,7 +3,7 @@ const titleInput = document.forms.postForm.postTitle;
 const bodyInput = document.forms.postForm.postBody;
 
 const makePost = () => {
-    if (titleInput.value !== "" || bodyInput.value !== "") {
+    if (titleInput.value !== "" && bodyInput.value !== "") {
         const postInput = {
             title: titleInput.value,
             body: bodyInput.value,
